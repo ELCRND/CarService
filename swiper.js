@@ -18,3 +18,21 @@ const answersSwiper = new Swiper(".swiper-answers", {
     prevEl: ".swiper-answers-button-prev",
   },
 });
+
+const promotionsSwiper = new Swiper(".swiper-promotions", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-promotions-button-next",
+    prevEl: ".swiper-promotions-button-prev",
+  },
+});
+
+const instructionsSwiper = new Swiper(".swiper-instructions", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-instructions-button-next",
+    prevEl: ".swiper-instructions-button-prev",
+  },
+});
