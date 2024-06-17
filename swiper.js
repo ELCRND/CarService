@@ -2,7 +2,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 const brandsSwiper = new Swiper(".swiper-brands", {
   loop: true,
-  slidesPerView: 1.5,
+  slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
     nextEl: ".swiper-brands-button-next",
@@ -75,6 +75,7 @@ const reviewsSwiper = new Swiper(".swiper-reviews", {
   spaceBetween: 30,
   freeMode: true,
   loop: true,
+  slidesOffsetBefore: 30,
   navigation: {
     nextEl: ".swiper-reviews-button-next",
     prevEl: ".swiper-reviews-button-prev",
@@ -82,9 +83,11 @@ const reviewsSwiper = new Swiper(".swiper-reviews", {
   breakpoints: {
     600: {
       slidesPerView: 2,
+      slidesOffsetBefore: 0,
     },
     1280: {
       slidesPerView: 4,
+      slidesOffsetBefore: 0,
     },
   },
 });
